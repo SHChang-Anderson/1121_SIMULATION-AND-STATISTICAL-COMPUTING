@@ -19,4 +19,4 @@
 2. Input the simlulate times.
 3. The program will Estimate E[N] by generating Input values of N.
 
-`Run python Estimate E[N] by generating x values of N relative err.py` to obtain the differences between each estimation value and the expectation value estimated by the previous N, as well as the convergence plot."
+`Run python Estimate E[N] by generating x values of N relative err.py` to obtain the differences between each estimation value and the expectation value estimated by the previous N, as well as the convergence plot.
