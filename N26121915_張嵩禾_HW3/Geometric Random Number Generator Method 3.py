@@ -2,6 +2,7 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 from scipy.stats import geom
+import time
 
 def geometric_random_inverse(p,q):
     n = random.random()  
@@ -9,8 +10,8 @@ def geometric_random_inverse(p,q):
     return x
 
 
-
-p = 0.15
+start = time.time()
+p = 0.50
 q = 1 - p
 samples_nums = 1000
 
@@ -18,6 +19,12 @@ geometric_random_numbers = []
 
 for i in range(samples_nums):
     geometric_random_numbers.append(geometric_random_inverse(p,q))
+
+
+end = time.time()
+outtime = format(end - start)
+out = "Generate Time : " + outtime + " seconds."
+print(out)
 
 plt.hist(geometric_random_numbers, bins = max(geometric_random_numbers), density=True)
 plt.xlabel('Number of Trials')
