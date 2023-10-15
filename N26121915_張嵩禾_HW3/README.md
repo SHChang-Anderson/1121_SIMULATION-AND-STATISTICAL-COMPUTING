@@ -21,4 +21,4 @@ the experiment results until it is a success.
 ### Use X= Int(log(U)/log(q))+1 Generate Geometric Random Number
 
 1. Run `python Geometric Random Number Generator Method 3.py`.
-2. You can achieve the desired results by adjusting the `**samples_nums**` and `**p**` values. Modify these parameters to tailor the outcomes according to your requirements.
+2. You can achieve the desired results by adjusting the `samples_nums` and `p` values. Modify these parameters to tailor the outcomes according to your requirements.
