@@ -9,15 +9,15 @@ This project provides two methods for generating Poisson Random Discrete Variabl
 
 ## Usage
 
-### Method 1: method1.py
+### Method 1: Method1.py
 method1.py allows you to generate Poisson R.D.V with varying mean values. You can adjust the mean by passing different parameters to the `generate_poisson` function. Follow these steps:
-1. Run method1.py
+1. Run Method1.py
 2. Modify the parameters in `generate_poisson` to generate Poisson R.D.V w
 
-### Method 2: method2.py
+### Method 2: Method2.py
 
 Method2.py uses the Rejection Method to generate Poisson R.D.V with different means. You need to adjust the values of g_Y and Y for different means. Follow these steps:
-1. Run method2.py
+1. Run Method2.py
 2. Adjust the values of g_Y and Y to match the desired mean for generating Poisson R.D.V.
 
 
