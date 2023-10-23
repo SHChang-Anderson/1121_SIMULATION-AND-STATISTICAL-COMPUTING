@@ -27,18 +27,13 @@ lambda_param = 5
 for _ in range(1000):
     random_variable = generate_poisson(2.5) # Generate results for different values of lambda_param
     outputarr.append(random_variable)
-end = time.time()
 
 
 
-start = time.time()
 for _ in range(1000):
-    random_variable = generate_poisson(lambda_param) # Generate results for different values of lambda_param
+    random_variable = generate_poisson(5) # Generate results for different values of lambda_param
     outputarr1.append(random_variable)
-outtime = format(end - start)
-print(outtime)
-out = "Generate 1000 R.D.V Time (λ = 5) : " + outtime + " seconds."
-print(out)
+
 
 
 for _ in range(1000):
