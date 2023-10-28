@@ -1,32 +1,41 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+import random
+from scipy.stats import norm
 
-# Set the seed for reproducibility (optional)
-np.random.seed(0)
 
-# Generate a random variable from an exponential distribution with rate 1
-rate = 1
-sample_size = 1  # You can change the sample size if you want more samples
-ans = []
-x = []
-for i in range(1000):
-    while(1):
-        Y = np.random.exponential(scale=1/rate, size=sample_size)
-        U = np.random.random()
-        if(U <= math.exp((-(Y-1)) * (-(Y-1))/ 2)):
-            break
-    ans.append(Y)       
 
-plt.figure(figsize=(12, 4))
-plt.subplot(1, 2, 1)
-plt.hist(ans, bins=30, density=True, alpha=0.6, label='Histogram')
-plt.xlabel('随机变量')
-plt.ylabel('频率')
-plt.title('直方图')
 
-# 绘制正态概率图 (Q-Q plot)
-plt.subplot(1, 2, 2)
-plt.title('正态概率图 (Q-Q plot)')
 
-plt.show()
+
+def generate_normal():
+  while True:
+    Y = random.expovariate(1)
+    U = random.random()
+    if U <= math.exp(-(Y-1)**2 / 2):
+        if(random.randint(0,1) == 1):
+            return -Y
+        return Y
+
+    else:
+        continue
+
+if __name__ == "__main__":    
+    rdv = []
+    for i in range(1000):
+        X = generate_normal()
+        rdv.append(X)
+
+    mu = 0  
+    sigma = 1  
+
+    x = np.linspace(-5, 5, 100)
+
+    pdf = norm.pdf(x, loc=mu, scale=sigma)
+    plt.plot(x, pdf)
+    plt.hist(rdv,density=True,edgecolor = "black", bins=25)
+    plt.xlabel('Value')
+    plt.ylabel('Frequency')
+    plt.title('Histogram of 1000 Normal RVs')
+    plt.show()
