@@ -1,32 +1,40 @@
-# 1121_SIMULATION-AND-STATISTICAL-COMPUTING-HW4
+# 1121_SIMULATION-AND-STATISTICAL-COMPUTING-HW5
 
-This project provides a method for generating Poisson Random Discrete Variables (R.D.V) using the approach described in the textbook section 5.1. Additionally, it includes a file named `Restaurant_Orders_Simulate.py` for simulating daily order quantities. This allows for the simulation of order quantities for different numbers of days.
+## Overview
+
+This project focuses on the generation of normal distribution variables. It provides examples and scripts for generating data that follows a standard normal distribution and simulates student test scores for a group of 1000 students.
+
+## Contents
+
+1. **Change Example 5f to generate a Standard Normal Distribution.py**: This script modifies the example from the textbook to generate data that follows a standard normal distribution.
+
+2. **Generate a Normal Random Variable by Linear Transformation to Represent Student Test Scores.py**: This program generate student test scores using a linear transformation method.
+
+3. **Generating student grades using the Rejection Method.py**: This program showcase of the generation of student grades using the Rejection Method, ensuring a normal distribution.
 
 ## Requirements
 
 - Python 3.10.10
 - matplotlib 3.7.1
+- numpy 1.24.2
+- scipy 1.10.1
 
 ## Usage
 
-### Poisson R.D.V Generator: Method1.py
+### Generate a Normal Random Variable by Rejection Method to Represent Student Test Scores:Change Example 5f to generate a Standard Normal Distribution:Change Example 5f to generate a Standard Normal Distribution.py
 
-`Method1.py` allows you to generate Poisson R.D.V with varying mean values. You can adjust the mean by passing different parameters to the `generate_poisson` function. Follow these steps:
+`Change Example 5f to generate a Standard Normal Distribution:Change Example 5f to generate a Standard Normal Distribution.py` allows you to generate 1000 test scores.
 
-1. Run Method1.py
-2. Modify the parameters in `generate_poisson` to generate Poisson R.D.V 
+1. Run `Change Example 5f to generate a Standard Normal Distribution:Change Example 5f to generate a Standard Normal Distribution.py`.
 
-### Poisson R.D.V Generator: Method2.py
 
-`Method2.py` allows you to generate Poisson R.D.V with varying mean values using the method described in section 5.1 of the textbook. You can adjust the mean by modifying the `lambda_param` variable in the script. Follow these steps:
+### Generate a Normal Random Variable by Rejection Method:Generating student grades using the Rejection Method.py
 
-1. Run `PoissonGenerator.py`.
-2. Modify the `lambda_param` variable to set the desired mean for generating Poisson R.D.V.
+1. Run `Generating student grades using the Rejection Method.py`.
+2. You can modify the generated variables to be integers or floating-point numbers by uncommenting the relevant sections in the code.
 
-### Restaurant Orders Simulation: Restaurant_Orders_Simulate.py
+### Generate a Normal Random Variable by Linear Transformation to Represent Student Test Scores:Generate a Normal Random Variable by Linear Transformation to Represent Student Test Scores.py
 
-`Restaurant_Orders_Simulate.py` is a file for simulating daily order quantities for a restaurant. You can modify this file to simulate order quantities for different numbers of days. This can be used for assessing order patterns over varying time frames. Follow these steps:
-
-1. Run `Restaurant_Orders_Simulate.py`.
-2. Adjust the parameters in the script to simulate order quantities for the desired number of days.
+1. Run `Generate a Normal Random Variable by Linear Transformation to Represent Student Test Scores.py`.
+2. You can modify the generated variables to be integers or floating-point numbers by uncommenting the relevant sections in the code.
 
