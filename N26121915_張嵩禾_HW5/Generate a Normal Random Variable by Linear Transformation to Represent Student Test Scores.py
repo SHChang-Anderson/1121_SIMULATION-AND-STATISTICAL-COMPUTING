@@ -17,6 +17,7 @@ for i in range(1000):
         sample = 0
     if(sample > 100):
         sample = 100
+        
     # generated variables to be integers or floating-point
     samples.append(int(sample))
     # samples.append(sample)
