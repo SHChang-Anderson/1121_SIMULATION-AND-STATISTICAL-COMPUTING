@@ -11,7 +11,7 @@ This program simulates the MM1 queue model, which involves Poisson arrivals and 
 ## Parameter Descriptions
 
 * arrival_rate: Arrival rate, controlling the rate at which customers arrive.
-*service_rate: Service rate, controlling the rate of service time.
+* service_rate: Service rate, controlling the rate of service time.
 * simutime: Number of simulations, used to generate results for multiple simulations.
 
 
